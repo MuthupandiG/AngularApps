@@ -1,0 +1,357 @@
+{
+  "version": 6,
+  "entities": [
+    {
+      "entity": {
+        "type": "Project",
+        "id": "71be19c6-965d-410b-ac06-d87e11c005bb",
+        "name": "Matrix server"
+      },
+      "children": [
+        {
+          "entity": {
+            "type": "Scenario",
+            "id": "ca513e42-4e13-4654-bffc-ccd82fc21325",
+            "name": "Scenario 1"
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n  \"LoginID\":\"aaa@gmail.com\",\n  \"token\":\"zXkWBcjHS66kF575edb0r6xCJNKRmo\",\n  \"Number\":null,\n  \"Jobid\":1,\n  \"invoice_value\":null,\n  \"Pay_acc_num\":\"0000011111\",\n  \"Pay_type\":1,\n  \"Send_Name\":\"Sivaji\",\n  \"send_phone\":\"900971366\",\n  \"send_email\":\"sivaji@gmail.com\",\n  \"send_address\":\"no.4, second street, Soorai\",\n  \"send_pincode\":600900,\n  \"send_city\":\"Pudukai\",\n  \"send_state\":\"Tamil Nadu\",\n  \"send_country\":\"India\",\n  \"send_fax\":11111,\n  \"send_proof_id\":\"12121212\",\n  \"send_proof_doc\":\"11123\",\n  \"rece_Name\":\"gadi\",\n  \"rece_phone\":\"8910001999\",\n  \"rece_email\":\"varsa@gmail.com\",\n  \"rece_address\":\"Second house, anna salai, Madurai\",\n  \"rece_pincode\":655044,\n  \"rece_city\":\"Chennai\",\n  \"rece_state\":\"Tamil Nadu\",\n  \"rece_country\":\"India\",\n  \"rece_fax\":123400089,\n  \"rece_proof_id\":\"1122213\",\n  \"rece_proof_doc\":\"12344\",\n  \"trans_mode\":\"1\",\n  \"parcel_desc\":\"House hold items\",\n  \"Declared_val\":3000,\n  \"LastUpdatedTimestamp\":null,\n  \"CreatedByUserID\":1,\n  \"Entry_Date\":null,\n  \"Ord_currency\":\"INR\",\n  \"Packs\":[\n    {\n      \"Weight\":4.5,\n      \"Length\":10.3,\n      \"Width\":15.00,\n      \"Height\":10.00,\n      \"Volume\":20,\n      \"pack_desc\":\"Jasmine packs\",\n      \"Pack_val\":10,\n      \"No_of_items\":2\n    },\n    {\n      \"Weight\":10.0,\n      \"Length\":0.3,\n      \"Width\":0,\n      \"Height\":20.00,\n      \"Volume\":15,\n      \"pack_desc\":\"Rose packs\",\n      \"Pack_val\":20,\n      \"No_of_items\":4\n    }],\n  \"Docs\":[\n    {\n      \"Num\":1,\n      \"Weight\":10,\n      \"pack_desc\":\"photos\",\n      \"No_of_items\":1\n    },\n    {\n      \"Num\":2,\n      \"Weight\":30,\n      \"pack_desc\":\"certificates\",\n      \"No_of_items\":1\n    }\n  ]\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "secure": true,
+                "name": "https",
+                "version": "V11"
+              },
+              "host": "69.172.233.8",
+              "path": "/api/Order/AddOrder"
+            },
+            "id": "9c6b3907-df5a-46a7-8385-cfd449d903ba",
+            "name": "Add Order",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "enabled": true,
+                "name": "datetimestamp",
+                "value": "20200403115100"
+              },
+              {
+                "enabled": true,
+                "name": "ClientSignature",
+                "value": "216369402efd0789ec5eb33fddb0e54d814e2b6eade48743d300c8a7d553ba73"
+              },
+              {
+                "enabled": true,
+                "name": "userid",
+                "value": "ClientMobile"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n\"LoginID\":\"bbb@gmail.com\",\n  \"token\":\"0dd0L15eL6gdkFtbWBkEk5rYXFXdWA\",\n  \"Number\":2,\n  \"invoice_value\":\"TL19\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "secure": true,
+                "name": "https",
+                "version": "V11"
+              },
+              "host": "69.172.233.8",
+              "path": "/api/Order/CancelOrder"
+            },
+            "id": "1f92fa14-2db5-4233-9dfd-331a4ebfef7a",
+            "name": "Cancel Order",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "datetimestamp",
+                "value": "20200403115100"
+              },
+              {
+                "enabled": true,
+                "name": "ClientSignature",
+                "value": "216369402efd0789ec5eb33fddb0e54d814e2b6eade48743d300c8a7d553ba73"
+              },
+              {
+                "enabled": true,
+                "name": "userid",
+                "value": "ClientMobile"
+              },
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n\"LoginID\":\"aaa@gmail.com\",\n  \"token\":\"zXkWBcjHS66kF575edb0r6xCJNKRmo\",\n  \"Number\":2\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "secure": true,
+                "name": "https",
+                "version": "V11"
+              },
+              "host": "69.172.233.8",
+              "path": "/api/Order/GetAllOrders"
+            },
+            "id": "d890c391-03ed-4bc9-b484-a1ce82c44208",
+            "name": "Get All Orders",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "datetimestamp",
+                "value": "20200403115100"
+              },
+              {
+                "enabled": true,
+                "name": "ClientSignature",
+                "value": "216369402efd0789ec5eb33fddb0e54d814e2b6eade48743d300c8a7d553ba73"
+              },
+              {
+                "enabled": true,
+                "name": "userid",
+                "value": "ClientMobile"
+              },
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n\"LoginID\":\"aaa@gmail.com\",\n  \"token\":\"zXkWBcjHS66kF575edb0r6xCJNKRmo\",\n  \"Number\":2,\n  \"invoice_value\":\"TL34\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "secure": true,
+                "name": "https",
+                "version": "V11"
+              },
+              "host": "69.172.233.8",
+              "path": "/api/Order/GetOrder"
+            },
+            "id": "198bf4ef-bb34-4b6f-9384-0f945b9a3762",
+            "name": "Get Order",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "datetimestamp",
+                "value": "20200403115100"
+              },
+              {
+                "enabled": true,
+                "name": "ClientSignature",
+                "value": "216369402efd0789ec5eb33fddb0e54d814e2b6eade48743d300c8a7d553ba73"
+              },
+              {
+                "enabled": true,
+                "name": "userid",
+                "value": "ClientMobile"
+              },
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n\"LoginID\":\"aaa@gmail.com\",\n\"Password\":\"testing@123\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "secure": true,
+                "name": "https",
+                "version": "V11"
+              },
+              "host": "69.172.233.8",
+              "path": "/api/UserManager/LoginUser"
+            },
+            "id": "6be28e88-dc3b-4714-ae96-bad39a4d110c",
+            "name": "Login User",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "enabled": true,
+                "name": "datetimestamp",
+                "value": "20200403115100"
+              },
+              {
+                "enabled": true,
+                "name": "ClientSignature",
+                "value": "216369402efd0789ec5eb33fddb0e54d814e2b6eade48743d300c8a7d553ba73"
+              },
+              {
+                "enabled": true,
+                "name": "userid",
+                "value": "ClientMobile"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n\"LoginID\":\"aaa@gmail.com\",\n  \"Email\":\"AG4P8i37Ip2xD6uoFQW1j1BocSzedz\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "secure": true,
+                "name": "https",
+                "version": "V11"
+              },
+              "host": "69.172.233.8",
+              "path": "/api/UserManager/LogoutUser"
+            },
+            "id": "af83e2d5-1115-4521-9e51-28d5516d722b",
+            "name": "Logout User",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "enabled": true,
+                "name": "datetimestamp",
+                "value": "20200403115100"
+              },
+              {
+                "enabled": true,
+                "name": "ClientSignature",
+                "value": "216369402efd0789ec5eb33fddb0e54d814e2b6eade48743d300c8a7d553ba73"
+              },
+              {
+                "enabled": true,
+                "name": "userid",
+                "value": "ClientMobile"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
